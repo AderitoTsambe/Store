@@ -152,7 +152,9 @@
       <div class="heading">
           <h2>Subscrever <span>NewsLetter</span></h2>
       </div>
-      <form id="contact-form" class="contact" action="newsletter.php" method="POST" >
+      
+    <form name="contact" method="POST" data-netlify="true" id="contact-form" class="contact" action="contact">
+        <input type="hidden" name="form-name" value="contact">
           <input type="email" name="" id="" placeholder="Escreve seu email..." class="email-box" required>
           <input type="submit" value="Subscrever" class="btn">
       </form>
